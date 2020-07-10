@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                      <div class="card card-register">
+                          <h3 class="title">Welcome</h3>
+                         
+                            <form class="register-form" (ngSubmit)="verifyToken(forms)">
+                                <label>Token</label>
+                                <div class="input-group form-group-no-border">
+                                    <input type="text" class="form-control" name="token" [(ngModel)]="forms.token" placeholder="Token">
+                                </div>
+
+                                <label>Email</label>
+                                <div class="input-group form-group-no-border">
+                                    <input type="text" class="form-control" name="email" [(ngModel)]="forms.email" placeholder="Email" >
+                                </div>
+
+                                <label>New Password</label>
+                                <div class="input-group form-group-no-border">
+                                    <input type="password" class="form-control" name="password" [(ngModel)]="forms.password" placeholder="Password">
+                                </div>
+                                <input type="submit" value="Submit" class="btn btn-danger btn-block btn-round">
+                            </form>
+                          <div class="forgot">
+                              <a href="#/forget-password" class="btn btn-link btn-danger">Forget password?</a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

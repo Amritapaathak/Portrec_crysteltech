@@ -1,0 +1,571 @@
+<div class="wrapper">
+    <div class="main-header-section">
+        <div class="top-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="language">
+                            <div class="dropdown-locate d-flex align-items-center justify-content-end">
+                                <span class="text-loc mr-2">Choose Location</span>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="locat-m"> Global </span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="mt-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"
+                style="background-color: transparent !important;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../../../assets/images/picturemessage_j1toqfwj.png" height="60px" width="150px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto align-items-center">
+                            <li class="nav-item dropdown menu-link-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    EMPLOYERS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item" style="">
+                                        <a href="#">VIDEO CONFERENCING</a>
+                                    </li>
+                                    <li class="dropdown-item" style="">
+                                        <a href="#">EXPERTISE</a>
+                                    </li>
+                                    <li class="dropdown-item" style="">
+                                        <a href="#">WHY US</a>
+                                    </li>
+                                    <li class="dropdown-item" style="">
+                                        <a href="#">PRICING</a>
+                                    </li>
+                                    <li class="dropdown-item" style="">
+                                        <a href="#">SERVICES</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item menu-link-item">
+                                <a class="nav-link" href="#">JOBSEEKERS</a>
+                            </li>
+                            <li class="nav-item menu-link-item">
+                                <a class="nav-link" href="#">LATEST INSIGHTS AND ADVICE</a>
+                            </li>
+                            <li class="nav-item menu-link-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item menu-link-item">
+                                <a class="nav-link src-icon" href="#"><i class="fa fa-search"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item menu-link-item">
+                                <a class="nav-link" href="#/signup"><span class="btn btn-red"
+                                        style="background-color: red;color: #fff;">Start Hiring</span></a>
+                            </li>
+                            <li class="nav-item menu-link-item">
+                                <a class="nav-link" href="#/job"><span class="btn btn-white"
+                                        style="background-color: white;color: red;border: 1px solid rgb(235, 1, 15);">Find
+                                        a Job</span></a>
+                            </li>
+                        </ul>
+                        <!-- <form class="form-inline my-2 my-lg-0">
+					      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section class="jobcontent-full mt-5">
+        <div class="jobseek-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-header text-center">
+                            <h3 class="title-head">Are you a Jobseeker?</h3>
+                            <p>Search and find your ideal job today</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="job-search-wrapper">
+                            <form (ngSubmit)="searchJob(forms)">
+                                <div class="job-search-form">
+                                    <div class="job-search-field dropdown">
+                                        <label for="filter-location" class="field-title">Where?</label>
+                                        <i class="fa fa-map-marker"></i>
+                                        <!-- <button type="button" class="dropdown-toggle" data-toggle="dropdown"
+                                            role="button" title="Filter by Location" id="dropdownMenuButton"
+                                            aria-expanded="false">
+                                            <span class="filter-option pull-left search-country-fld"> <b>Select</b>
+                                                Country </span>&nbsp;<span class="bs-caret"><span
+                                                    class="caret-t"></span></span>
+                                        </button> -->
+                                        <select name="country" [(ngModel)]="forms.country">
+                                            <option selected>Select Country</option>
+                                            <option value="all"><a class="country-list-item">
+                                                <span class="text">All Countries</span>
+                                            </a></option>
+                                            <option value="Australia"><a tabindex="0" class="country-list-item">
+                                                <span class="text">Australia</span>
+                                            </a></option>
+                                            <option value="america"><a tabindex="1" class="country-list-item">
+                                                <span class="text">America</span>
+                                            </a></option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="job-search-field">
+                                        <label for="job-title" class="field-title">Which role?</label>
+                                        <i class="fa fa-keyboard-o"></i>
+                                        <input id="job-title-mob" name="keyword" [(ngModel)]="forms.keyword" type="text"
+                                            placeholder="Job Title or Keywords" value="" />
+                                    </div>
+                                    <div class="intro-search-button">
+                                        <button class="btn src-btn-job" style="background-color: red;color: #fff;">
+                                            <span>Search</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-jobfrm">
+            <div class="container">
+                <div class="full-grid-listjob my-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="left-side-filter">
+                                <div class="sidebar-item job-search-filter">
+                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapseExample"
+                                        aria-expanded="false" aria-controls="collapseExample">Jobs by Location</h4>
+                                    <div id="collapseExample" class="collapse">
+                                        <ul>
+                                            <li>
+                                                <a href="">Tokyo<span>708</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Dublin<span>261</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Cork<span>164</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Singapore<span>164</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Hong Kong<span>130</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">London<span>86</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">New South Wales<span>65</span></a>
+                                            </li>
+                                        </ul>
+                                        <!--<div class="show-more">Show more</div>
+									                    <div class="show-less">Show less</div>-->
+                                    </div>
+                                </div>
+                                <div class="sidebar-item job-search-filter">
+                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                                        aria-expanded="false" aria-controls="collapse2">Jobs by Category</h4>
+                                    <div id="collapse2" class="collapse">
+                                        <ul>
+                                            <li>
+                                                <a href="">IT<span>461</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Finance &amp; Accounting<span>338</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sidebar-item job-search-filter">
+                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapse3"
+                                        aria-expanded="false" aria-controls="collapse3">Jobs by Type</h4>
+                                    <div id="collapse3" class="collapse">
+                                        <ul>
+                                            <li>
+                                                <a href="">Permanent<span>1581</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Contract<span>269</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Temporary<span>19</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sidebar-item job-search-filter">
+                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapse4"
+                                        aria-expanded="false" aria-controls="collapse3">Jobs by Industry</h4>
+                                    <div id="collapse4" class="collapse">
+                                        <ul>
+                                            <li>
+                                                <a href="">Investment Banking<span>183</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="">Technology<span>160</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="">Financial Services<span>154</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="">Professional Services<span>152</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-Job">
+                                <h6>Couldn't find the right Job?</h6>
+                                <a class="btn btn-cv" data-toggle="modal" data-target="#exampleModalCenter">Send us your
+                                    CV</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-0">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Send us your CV</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="senn-box-cv">
+                                                    <div class="content--part-cv">
+                                                        <form action="">
+                                                            <div class="form-group form-row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field--input">
+                                                                        <input type="text"
+                                                                            class="form-control controler-fill"
+                                                                            placeholder="First Name" name="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field--input">
+                                                                        <input type="text"
+                                                                            class="form-control controler-fill"
+                                                                            placeholder="Last Name" name="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group form-row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field--input">
+                                                                        <input type="email"
+                                                                            class="form-control controler-fill"
+                                                                            placeholder="Email Address" name="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field--input">
+                                                                        <input type="email"
+                                                                            class="form-control controler-fill"
+                                                                            placeholder="Conform Email Address" name="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group form-row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field--input">
+                                                                        <select class="form-control controler-fill">
+                                                                            <option>Select a Location</option>
+                                                                            <option>Australia</option>
+                                                                            <option>Canada</option>
+                                                                            <option>China</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field--input">
+                                                                        <select class="form-control controler-fill">
+                                                                            <option>Select a Job Category</option>
+                                                                            <option value="technical">Technical</option>
+                                                                            <option value="nontechnical">Non-technical
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row form-group">
+                                                                <div class="col-md-12 upload-cv-wrap">
+                                                                    <div class="upload-cv upload-field">
+                                                                        <fieldset class="js-form-item">
+                                                                            <label class="sr-only cv-upload--fill">
+                                                                                <span>Upload CV <i
+                                                                                        class="float-right fa fa-arrow-circle-o-up"
+                                                                                        aria-hidden="true"></i></span>
+                                                                                <input class="cv-upload" type="file"
+                                                                                    name="" />
+                                                                            </label>
+                                                                        </fieldset>
+                                                                        <div class="upload-cv-text">
+                                                                            <p>Files must be less than <span>2 MB</span>
+                                                                            </p>
+                                                                            <p>Allowed file types: <span>pdf, docx, doc,
+                                                                                    txt</span></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-row form-group fill-txt_size">
+                                                                <div class="col-12">
+                                                                    <div class="check-box-fill d-flex">
+                                                                        <label class="check--label">
+                                                                            <input type="checkbox" checked="checked">
+                                                                            <span class="checkmark"></span>
+                                                                        </label>
+                                                                        <p>I consent to Portrec processing my
+                                                                            personal information in accordance with the
+                                                                            Portrec <a href="#"
+                                                                                target="_blank">Privacy Statement</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <p>In order to provide you with the best possible
+                                                                        service, we need to process certain personal
+                                                                        information about you. We will only ask for and
+                                                                        use information that we genuinely need to
+                                                                        provide you with the best possible service.</p>
+                                                                    <p>We seek your consent to store your data and
+                                                                        provide you with services. Our privacy statement
+                                                                        clearly outlines the ways in which we process
+                                                                        your personal data. It describes how we collect,
+                                                                        use, share and process your personal data and
+                                                                        how we comply with our legal obligations to you.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row form-group fill-txt_size">
+                                                                <div class="col-12">
+                                                                    <div class="submitresum text-center">
+                                                                        <button type="submit" class="btn">SEND
+                                                                            NOW</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="all-job-wraper">
+                                <div class="all-d-txt d-flex justify-content-between align-items-center">
+                                    <h3>All Jobs</h3>
+                                    <span class="job-search-count">Displaying 1 - <span>10</span> of 1869</span>
+                                </div>
+                                <div class="allpages-list">
+                                    <div class="job-search-item">
+                                        <a href="#">
+                                            <h5>Indirect Tax (VAT) Accountant</h5>
+                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
+                                                Tax professional to their International Indirect Tax Accounting team.
+                                            </p>
+                                            <div class="job-list-summary">
+                                                <ul>
+                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
+                                                            aria-hidden="true"></i>Cork City</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i>Contract</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
+                                                            aria-hidden="true"></i>Jul 03, 2020</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
+                                                            aria-hidden="true"></i>€50k - €70k</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="job-search-item">
+                                        <a href="#">
+                                            <h5>Indirect Tax (VAT) Accountant</h5>
+                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
+                                                Tax professional to their International Indirect Tax Accounting team.
+                                            </p>
+                                            <div class="job-list-summary">
+                                                <ul>
+                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
+                                                            aria-hidden="true"></i>Cork City</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i>Contract</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
+                                                            aria-hidden="true"></i>Jul 03, 2020</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
+                                                            aria-hidden="true"></i>€50k - €70k</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="job-search-item">
+                                        <a href="#">
+                                            <h5>Indirect Tax (VAT) Accountant</h5>
+                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
+                                                Tax professional to their International Indirect Tax Accounting team.
+                                            </p>
+                                            <div class="job-list-summary">
+                                                <ul>
+                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
+                                                            aria-hidden="true"></i>Cork City</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i>Contract</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
+                                                            aria-hidden="true"></i>Jul 03, 2020</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
+                                                            aria-hidden="true"></i>€50k - €70k</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="job-search-item">
+                                        <a href="#">
+                                            <h5>Indirect Tax (VAT) Accountant</h5>
+                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
+                                                Tax professional to their International Indirect Tax Accounting team.
+                                            </p>
+                                            <div class="job-list-summary">
+                                                <ul>
+                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
+                                                            aria-hidden="true"></i>Cork City</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i>Contract</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
+                                                            aria-hidden="true"></i>Jul 03, 2020</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
+                                                            aria-hidden="true"></i>€50k - €70k</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="job-search-item">
+                                        <a href="#">
+                                            <h5>Indirect Tax (VAT) Accountant</h5>
+                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
+                                                Tax professional to their International Indirect Tax Accounting team.
+                                            </p>
+                                            <div class="job-list-summary">
+                                                <ul>
+                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
+                                                            aria-hidden="true"></i>Cork City</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i>Contract</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
+                                                            aria-hidden="true"></i>Jul 03, 2020</li>
+                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
+                                                            aria-hidden="true"></i>€50k - €70k</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="load-more text-center">
+                                        <a href="#" class="btn more-job-lnk"><span>Load more Jobs</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top mb-4">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-lg-3">
+                        <a class="footer-logo" href="#">
+                            <img src="../../../assets/images/picturemessage_j1toqfwj.png" height="60px" width="150px">
+                        </a>
+                        <!-- <h5 class="footer-logo"><img alt="" src="images/footer-logo.svg" /></h5> -->
+                    </div>
+                    <div class="col-md-9">
+                        <p class="text-right touch-text">Get in touch with us today and let us find your perfect
+                            candidates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-content py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <div class="copywrite">
+                                © Portrec 2020
+                            </div>
+                            <ul class="footer-btm-link">
+                                <li><a href="#" target="_blank">Privacy Statement</a></li>
+                                <li><a href="#" target="_blank">Cookies Policy</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="social-link-ftr">
+                            <li>
+                                <a class="tw-ic" href="#" target="_blank" data-ol-has-click-handler=""><i
+                                        class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="li-ic" href="#" target="_blank" data-ol-has-click-handler=""><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="yu-ic" href="#" target="_blank" data-ol-has-click-handler=""><i
+                                        class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fb-ic" href="#" target="_blank" data-ol-has-click-handler=""><i
+                                        class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

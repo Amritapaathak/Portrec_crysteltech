@@ -1,0 +1,228 @@
+<div class="wrapper">
+    <!-- <div class="page-header" style="background-image: url('http://18.140.131.246/dist/assets/img/login-image.jpg');" height="100%"> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-2"></div>
+            <div class="col-lg-8 col-sm-8 mr-auto ml-auto mt-2">
+                <div class="card card-register">
+                    <h3 class="title">Post Job</h3>
+                    <!-- <form class="register-form" (ngSubmit)="jobPost(forms)">
+                        <label>Job Type</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Jobs Type" name="jobsType" [(ngModel)]="forms.jobsType">
+                        </div>
+                        <label>Skills</label>
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Skills" name="skills" [(ngModel)]="forms.skills">
+                        </div>
+
+                        <label>Experience</label>
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Experience" name="exprence" [(ngModel)]="forms.exprence">
+                        </div>
+
+                        <label>Package</label>
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Package" name="package" [(ngModel)]="forms.package">
+                        </div>
+
+                        <label>Criteria</label>
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Education" name="education" [(ngModel)]="forms.education">
+                        </div>
+
+                        <label>Job Summary</label>
+                        <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Job Summary" name="JobSummary"  [(ngModel)]="forms.JobSummary">
+                        </div>
+
+                        <label>Responsibilities And Duties</label>
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Responsibilities And Duties" name="ResponsibilitiesDuties" [(ngModel)]="forms.ResponsibilitiesDuties">
+                        </div>
+
+                        <input type="submit" value="SUBMIT" class="btn btn-danger btn-block btn-round">
+                    </form> -->
+
+                    <form class="register-form" (ngSubmit)="jobPost(forms)">
+                        <label>Job Type</label>
+                        <div class="input-group">
+                            <textarea class="form-control" placeholder="Jobs Type" name="jobsType"
+                                [(ngModel)]="forms.jobsType" #jobsType="ngModel" required minlength="3" maxlength="50"></textarea>
+                        </div>
+
+                        <div *ngIf="jobsType.invalid && (jobsType.dirty || jobsType.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="jobsType.errors.required">
+                                Jobs Type is required.
+                            </div>
+                            <div *ngIf="jobsType.errors.maxlength">
+                                Jobs Type cannot be more than 30 characters long.
+                            </div>
+                            <div *ngIf="jobsType.errors.minlength">
+                                Jobs Type must be at least 3 characters long.
+                            </div>
+                        </div>
+
+                        <label>Skills</label>
+                        <div class="input-group">
+
+                            <textarea class="form-control" placeholder="Skills" name="skills" [(ngModel)]="forms.skills"
+                                required minlength="10" maxlength="100" #skills="ngModel"></textarea>
+                        </div>
+
+                        <div *ngIf="skills.invalid && (skills.dirty || skills.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="skills.errors.required">
+                                Skills is required.
+                            </div>
+                            <div *ngIf="skills.errors.maxlength">
+                                Skills cannot be more than 100 characters long.
+                            </div>
+                            <div *ngIf="skills.errors.minlength">
+                                Skills must be at least 10 characters long.
+                            </div>
+                        </div>
+
+
+                        <label>Experience</label>
+                        <div class="input-group">
+
+                            <textarea class="form-control" placeholder="Experience" name="exprence"
+                                [(ngModel)]="forms.exprence" required minlength="10" maxlength="100" #exprence="ngModel"></textarea>
+                        </div>
+
+                        <div *ngIf="exprence.invalid && (exprence.dirty || exprence.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="exprence.errors.required">
+                                Experience is required.
+                            </div>
+                            <div *ngIf="exprence.errors.maxlength">
+                                Experience cannot be more than 100 characters long.
+                            </div>
+                            <div *ngIf="exprence.errors.minlength">
+                                Experience must be at least 10 characters long.
+                            </div>
+                        </div>
+
+                        <label>Package</label>
+                        <div class="input-group">
+
+                            <textarea class="form-control" placeholder="Package" name="package"
+                                [(ngModel)]="forms.package" required minlength="4" maxlength="100" #package="ngModel"></textarea>
+                        </div>
+
+                        <div *ngIf="package.invalid && (package.dirty || package.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="package.errors.required">
+                                Package is required.
+                            </div>
+                            <div *ngIf="package.errors.maxlength">
+                                Package cannot be more than 100 characters long.
+                            </div>
+                            <div *ngIf="package.errors.minlength">
+                                Package must be at least 4 characters long.
+                            </div>
+                        </div>
+
+                        <label>Criteria</label>
+                        <div class="input-group">
+
+                            <textarea class="form-control" placeholder="Education" name="education"
+                                [(ngModel)]="forms.education" required minlength="10" maxlength="200" #education="ngModel"></textarea>
+                        </div>
+
+                        <div *ngIf="education.invalid && (education.dirty || education.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="education.errors.required">
+                                Education is required.
+                            </div>
+                            <div *ngIf="education.errors.maxlength">
+                                Package cannot be more than 200 characters long.
+                            </div>
+                            <div *ngIf="education.errors.minlength">
+                                Package must be at least 10 characters long.
+                            </div>
+                        </div>
+
+                        <label>Job Summary</label>
+                        <div class="input-group">
+                            <textarea class="form-control" placeholder="Job Summary" name="JobSummary"
+                                [(ngModel)]="forms.JobSummary" required minlength="30" maxlength="300" #JobSummary="ngModel"></textarea>
+                        </div>
+
+                        <div *ngIf="JobSummary.invalid && (JobSummary.dirty || JobSummary.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="JobSummary.errors.required">
+                                Job Summary is required.
+                            </div>
+                            <div *ngIf="JobSummary.errors.maxlength">
+                                Job Summary cannot be more than 30 characters long.
+                            </div>
+                            <div *ngIf="JobSummary.errors.minlength">
+                                Job Summary must be at least 300 characters long.
+                            </div>
+                        </div>
+
+                        <label>Location</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Location" name="location"
+                                [(ngModel)]="forms.location" required minlength="3" maxlength="300" #location="ngModel">
+                        </div>
+
+                        <div *ngIf="location.invalid && (location.dirty || location.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="location.errors.required">
+                                Location is required.
+                            </div>
+                        </div>
+
+                        <label>Industry Type</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Industry Type" name="category"
+                                [(ngModel)]="forms.category" required minlength="3" maxlength="300" #category="ngModel">
+                        </div>  
+
+                        <div *ngIf="category.invalid && (category.dirty || category.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="category.errors.required">
+                                Industry Type is required.
+                            </div>
+                        </div>
+
+                        <label>Responsibilities And Duties</label>
+                        <div class="input-group">
+
+                            <textarea class="form-control" placeholder="Responsibilities And Duties"
+                                name="ResponsibilitiesDuties" [(ngModel)]="forms.ResponsibilitiesDuties" required
+                                minlength="30" maxlength="200" #ResponsibilitiesDuties="ngModel"></textarea>
+                        </div>
+
+                        <div *ngIf="ResponsibilitiesDuties.invalid && (ResponsibilitiesDuties.dirty || ResponsibilitiesDuties.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="ResponsibilitiesDuties.errors.required">
+                                Responsibilities And Duties is required.
+                            </div>
+                            <div *ngIf="ResponsibilitiesDuties.errors.maxlength">
+                                Responsibilities And Duties cannot be more than 200 characters long.
+                            </div>
+                            <div *ngIf="ResponsibilitiesDuties.errors.minlength">
+                                Responsibilities And Duties must be at least 30 characters long.
+                            </div>
+                        </div>
+
+                        <input type="submit" value="SUBMIT" class="btn btn-danger btn-block btn-round">
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-2"></div>
+        </div>
+    </div>
+</div>
