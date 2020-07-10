@@ -29,7 +29,6 @@ p {
     font-size: 16px;
     line-height: 26px;
     color: rgb(51, 71, 91);
-
 }
 h1, h2, h3, h4, h5, h6 {
     color: rgb(51, 71, 91);
@@ -50,10 +49,65 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------------*/
 .search-form{
     display: none;
+    padding: 47px 0 40px;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    background: #f0f2f7;
+    right: 0;
+    margin: 0 auto;
+    top: 60px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
-
-
+.form-type-1, .form-type-2{
+    flex: 1; 
+    max-width: 940px;
+    margin-right: 30px;
+}
+.form-type-3{
+    width: 140px;
+}
+.form-js-wig .form-control {
+    height: 50px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.src-form-comn .btn-top-src{
+    color: rgb(255, 255, 255);
+    background: rgb(235, 1, 15);
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.src-form-comn .btn-top-src .fa-search{
+    margin-right: 10px;
+    font-size: 22px;
+}
+.close-src-frm {
+    display: inline-block;
+    position: absolute;
+    top: -61px;
+    right: 23%;
+    z-index: 999;
+}
+.close-src-frm button {
+    padding: 5px 17px 26px;
+    font-size: 20px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #f0f2f7;
+    z-index: 999;
+    border: 0;
+}
+.overlap{
+    overflow: hidden;
+    background-color: #000; 
+}
 
 
 
@@ -62,15 +116,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------- header ---------------------*/
 .top-head{
-    z-index: 99;
     position: relative;
+    z-index: 99;
 }
-
 header{
     position: relative;
     z-index: 9;
+    margin: 10px 0px 40px;
 }
-
 .navbar-nav .dropdown:hover > .dropdown-menu {
   display: block;
 }
@@ -248,7 +301,7 @@ header{
 
 
 
-
+/*----------  Why Morgan Mckinley  ---------*/
 .section-header {
     text-align: center;
     max-width: 750px;
@@ -289,7 +342,7 @@ header{
     color: rgb(51, 71, 91);
     height: calc(16vh - 0px);
 }
-
+/*-------------  why morgan about ------------------- */
 .bg-curv img{
     width: 100%;
     margin-bottom: -50px;
@@ -975,25 +1028,234 @@ label.cv-upload--fill input.cv-upload {
     padding: 12px;
 
 }
+/*--------------hiring page------------*/
 
 
+.hiring-sec p{
+    color: rgba(51,71,91,.81);
+}
+.hire-staff-sec {
+    background: url(../images/inner-jo-banner.png) no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    background-position: bottom center;
+    padding-bottom: 60px;
+}
+span.call-txt {
+    font-size: 24px;
+    font-weight: 700;
+    color: #33475b;
+}
+.flag-dropdn button img{
+    width: 24px;
+}
 
+.flag-dropdn button::after{
+    vertical-align: middle;
+}
+.contactnum{
+    padding: 0px;
+}
+.item-linkcont {
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.item-linkcont img {
+    max-width: 22px;
+    margin-right: 10px;
+}  
+.change-number .num-tt{
+    font-size: 36px;
+    color: #33475b;
+    font-weight: 400;
+    font-family: 'Open Sans',sans-serif;
+}
+.hours-txt p {
+    font-size: 20px;
+    color: rgba(51,71,91,.81);
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
 
+/*----------- Find your local office  -------------------*/
+ .find-y-section{
+    padding: 30px 0 20px;
+    background-color: #eef2f4;
+}
+.title-find h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.local-colum {
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #adb5bd;
+    border-top: 0;
+    height: calc(100% - 50px);
+}
+.address-bottom-n{
+    padding: 25px 25px 15px;
+}
+.address-bottom-n h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.address-bottom-n .address--local{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: Lato,sans-serif;
+}
+.address--local{
+    display: flex;
+}
+.address--local span:first-child{
+    font-size: 21px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.address--local span a{
+    font-weight: 700;
+    color: rgb(51, 71, 91);
+}
+.global-btn{
+    color: #eb010f;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.detail-section-wid{
+    background: url(../images/gray-bg.png) no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.detail-title h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.senn-box-cv {
+    font-family: "Open Sans",sans-serif;
+    max-width: 600px;
+    background-color: #eef2f4;
+    -webkit-box-shadow: 0 12px 21px 0 rgba(179,179,179,.5);
+    box-shadow: 0 12px 21px 0 rgba(179,179,179,.5);
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.submitdetail button{
+    background-color: #eb010f;
+    border: 1px solid #eb010f;
+    color: #fff;
+    padding: 12px 30px;
+    font-weight: 700;
+}
+.content--part-cv .form-group {
+    margin-bottom: 2rem;
+}
+.btn-text-link{
+    height: 33px;
+    color: #FFF;
+    padding: 0px 15px;
+    border: 1px #2D6FA8 solid;
+    border-radius: 3px;
+    font-size: 12px;
+    position: relative;
+    background: #79adcb;
+    background: -webkit-linear-gradient(top, #79adcb 15%, #2373ac 100%);
+    background: linear-gradient(to bottom, #79adcb 15%, #2373ac 100%);
+}
+.field--input span{
+    font-size: 13px;
+}
+/* The container */
+.radio-btn {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 15px;
+}
 
+/* Hide the browser's default radio button */
+.radio-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
 
+/* Create a custom radio button */
+.radio-btn .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: solid 1px #5b6b7b80;
+}
 
+/* On mouse-over, add a grey background color */
+.radio-btn:hover input ~ .checkmark {
+  background-color: #ccc;
+}
 
+/* When the radio button is checked, add a blue background */
+.radio-btn input:checked ~ .checkmark {
+  background-color: #eb010f;
+}
 
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-btn .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 
+/* Show the indicator (dot/circle) when checked */
+.radio-btn input:checked ~ .checkmark:after {
+  display: block;
+}
 
-
-
-
-
-
-
-
-
+/* Style the indicator (dot/circle) */
+.radio-btn .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+}
+.privc-state{
+    padding-top: 30px;
+}
+.privc-state a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #33475b;
+    display: inline-block;
+}
 
 
 

@@ -9,7 +9,13 @@ export class SignupComponent implements OnInit {
     test : Date = new Date();
     focus;
     focus1;
+    forms = <any>{};
     constructor() { }
 
     ngOnInit() {}
+
+    postJob(forms){
+        console.log(forms);
+        console.log(this.forms);
+    }
 }
