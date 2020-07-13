@@ -17,6 +17,17 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { VerifyTokenComponent } from './verify-token/verify-token.component';
 import { PostjobComponent } from './postjob/postjob.component';
 import { FindjobComponent } from './findjob/findjob.component';
+import { ContactComponent } from './contact/contact.component';
+import { BannerComponent } from './banner/banner.component';
+import { ContainerComponent } from './container/container.component';
+import { ExpertiesComponent } from './experties/experties.component';
+import { WhyusComponent } from './whyus/whyus.component';
+import { ServicesComponent } from './services/services.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { OurStoryComponent } from './our-story/our-story.component';
+import { HowWeDiscoverYourTalentComponent } from './how-we-discover-your-talent/how-we-discover-your-talent.component';
+import { CorporateSocialResponsibilityComponent } from './corporate-social-responsibility/corporate-social-responsibility.component';
+import { PermanentRecruitmentComponent } from './services/permanent-recruitment/permanent-recruitment.component';
 
 @NgModule({
     imports: [
@@ -37,7 +48,18 @@ import { FindjobComponent } from './findjob/findjob.component';
         ResetPasswordComponent,
         VerifyTokenComponent,
         PostjobComponent,
-        FindjobComponent
+        FindjobComponent,
+        ContactComponent,
+        BannerComponent,
+        ContainerComponent,
+        ExpertiesComponent,
+        WhyusComponent,
+        ServicesComponent,
+        PricingComponent,
+        OurStoryComponent,
+        HowWeDiscoverYourTalentComponent,
+        CorporateSocialResponsibilityComponent,
+        PermanentRecruitmentComponent
     ],
     providers: [HttpClientModule]
 })

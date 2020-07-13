@@ -6,7 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ComponentsComponent } from './components/components.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { SignupComponent } from './examples/signup/signup.component';
-import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { LoginComponent } from './examples/login/login.component';
 import { ForgetPasswordComponent } from './examples/forget-password/forget-password.component';
@@ -16,6 +15,14 @@ import { ResetPasswordComponent } from './examples/reset-password/reset-password
 import { VerifyTokenComponent } from './examples/verify-token/verify-token.component';
 import { PostjobComponent } from './examples/postjob/postjob.component';
 import { FindjobComponent } from './examples/findjob/findjob.component';
+import { ContactComponent } from './examples/contact/contact.component';
+import { ExpertiesComponent } from './examples/experties/experties.component';
+import { PricingComponent } from './examples/pricing/pricing.component';
+import { ServicesComponent } from './examples/services/services.component';
+import { WhyusComponent } from './examples/whyus/whyus.component';
+import { OurStoryComponent } from './examples/our-story/our-story.component';
+import { HowWeDiscoverYourTalentComponent } from './examples/how-we-discover-your-talent/how-we-discover-your-talent.component';
+import { CorporateSocialResponsibilityComponent } from './examples/corporate-social-responsibility/corporate-social-responsibility.component';
   import { from } from 'rxjs';
 
 const routes: Routes =[
@@ -25,7 +32,6 @@ const routes: Routes =[
     { path: 'postjob',          component: PostjobComponent},
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
-    { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'login',            component: LoginComponent },
     { path: 'forget-password',  component: ForgetPasswordComponent},
@@ -33,6 +39,14 @@ const routes: Routes =[
     { path: 'jobseekersignup',  component: JobSeekerSignupComponent},
     { path: 'resetpassword',    component: ResetPasswordComponent },
     { path: 'verifytoken',      component: VerifyTokenComponent},
+    { path: 'contact',          component: ContactComponent},
+    { path: 'experties',        component: ExpertiesComponent},
+    { path: 'pricing',          component: PricingComponent},
+    { path: 'services',         component: ServicesComponent},
+    { path: 'why-us',           component: WhyusComponent},
+    { path: 'our-story',        component: OurStoryComponent},
+    { path: 'how-we-discover-your-talent', component: HowWeDiscoverYourTalentComponent},
+    { path: 'corporate-social-responsibility', component: CorporateSocialResponsibilityComponent},
 ];
 
 @NgModule({
