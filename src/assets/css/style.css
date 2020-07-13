@@ -1256,8 +1256,10 @@ span.call-txt {
     color: #33475b;
     display: inline-block;
 }
-
-
+/*---------contact us---------*/
+.contact-box-ab{
+    margin-top: -100px;
+}
 
 
 
