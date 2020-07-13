@@ -17,13 +17,21 @@ import {
   FacebookLoginProvider,
   AmazonLoginProvider,
 } from 'angularx-social-login';
+import { ServicesModule } from './examples/services/services.module';
+import { ExpertiesModule } from './examples/experties/experties.module';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
+  ],
+  exports: [
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +42,8 @@ import {
     ExamplesModule,
     AppRoutingModule,
     SocialLoginModule,
+    ServicesModule,
+    ExpertiesModule,
   ],
   providers: [
     {

@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
@@ -28,6 +26,9 @@ import { OurStoryComponent } from './our-story/our-story.component';
 import { HowWeDiscoverYourTalentComponent } from './how-we-discover-your-talent/how-we-discover-your-talent.component';
 import { CorporateSocialResponsibilityComponent } from './corporate-social-responsibility/corporate-social-responsibility.component';
 import { PermanentRecruitmentComponent } from './services/permanent-recruitment/permanent-recruitment.component';
+import { JobDescriptionTemplatesComponent } from './job-description-templates/job-description-templates.component';
+import { LatestInsightsAndAdviceComponent } from './latest-insights-and-advice/latest-insights-and-advice.component';
+import { SalaryGuidesComponent } from './salary-guides/salary-guides.component';
 
 @NgModule({
     imports: [
@@ -38,7 +39,6 @@ import { PermanentRecruitmentComponent } from './services/permanent-recruitment/
         HttpClientModule,
     ],
     declarations: [
-        LandingComponent,
         SignupComponent,
         ProfileComponent,
         LoginComponent,
@@ -59,7 +59,10 @@ import { PermanentRecruitmentComponent } from './services/permanent-recruitment/
         OurStoryComponent,
         HowWeDiscoverYourTalentComponent,
         CorporateSocialResponsibilityComponent,
-        PermanentRecruitmentComponent
+        PermanentRecruitmentComponent,
+        JobDescriptionTemplatesComponent,
+        LatestInsightsAndAdviceComponent,
+        SalaryGuidesComponent
     ],
     providers: [HttpClientModule]
 })

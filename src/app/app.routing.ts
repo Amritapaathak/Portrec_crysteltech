@@ -24,6 +24,8 @@ import { OurStoryComponent } from './examples/our-story/our-story.component';
 import { HowWeDiscoverYourTalentComponent } from './examples/how-we-discover-your-talent/how-we-discover-your-talent.component';
 import { CorporateSocialResponsibilityComponent } from './examples/corporate-social-responsibility/corporate-social-responsibility.component';
   import { from } from 'rxjs';
+import { JobDescriptionTemplatesComponent } from './examples/job-description-templates/job-description-templates.component';
+import { SalaryGuidesComponent } from './examples/salary-guides/salary-guides.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -40,13 +42,18 @@ const routes: Routes =[
     { path: 'resetpassword',    component: ResetPasswordComponent },
     { path: 'verifytoken',      component: VerifyTokenComponent},
     { path: 'contact',          component: ContactComponent},
-    { path: 'experties',        component: ExpertiesComponent},
+    { path: 'experties',        loadChildren: './examples/experties/experties.module#ExpertiesModule'},
     { path: 'pricing',          component: PricingComponent},
-    { path: 'services',         component: ServicesComponent},
+    { path: 'services',         loadChildren: './examples/services/services.module#ServicesModule'},
+    
     { path: 'why-us',           component: WhyusComponent},
     { path: 'our-story',        component: OurStoryComponent},
     { path: 'how-we-discover-your-talent', component: HowWeDiscoverYourTalentComponent},
     { path: 'corporate-social-responsibility', component: CorporateSocialResponsibilityComponent},
+    { path: 'job-description-templates', component: JobDescriptionTemplatesComponent},
+    { path: 'latest-insights-and-advice', loadChildren: './examples/latest-insights-and-advice/latest-insights-and-advice.module#LatestInsightsAndAdviceModule'},
+    { path: 'salary-guides', component:SalaryGuidesComponent},
+
 ];
 
 @NgModule({
