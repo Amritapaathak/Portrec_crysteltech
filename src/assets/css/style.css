@@ -124,13 +124,13 @@ header{
     z-index: 9;
     margin: 10px 0px 40px;
 }
-.navbar-nav .dropdown:hover > .dropdown-menu {
+/* .navbar-nav .dropdown:hover > .dropdown-menu {
   display: block;
-}
+} */
 
-.navbar-nav .dropdown > .dropdown-toggle:active {
+/* .navbar-nav .dropdown > .dropdown-toggle:active {
   pointer-events: none;
-}
+} */
 .text-loc{
     font-weight: 400;
     font-size: 12px;

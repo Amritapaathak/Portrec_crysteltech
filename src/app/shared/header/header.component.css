@@ -1,0 +1,10 @@
+.navbar .navbar-nav .nav-item .nav-link {
+    line-height: 1.6;
+    margin: 15px 0px;
+    padding: 10px 15px;
+    opacity: 0.8;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #66615B;
+}
