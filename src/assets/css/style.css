@@ -183,25 +183,113 @@ header{
     position: relative;
     z-index: 0;
     background: rgb(235, 1, 15);
-    padding: 10px 30px;
-    font-size: 13px;
+    padding: 0px 30px;
+    font-size: 14px;
+    height: 50px;
     font-weight: 700;
     border-radius: 5px;
     border: 1px solid rgb(235, 1, 15);
     overflow: hidden;
     color: #fff;
+    transition: .3s;
+    line-height: 50px;
+}
+.btn-red:hover{
+    color: #fff;
+    border-color: transparent;
+}
+.btn-red::after, .btn-red::before{
+    background: #ff2d39;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.btn-red::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    bottom: 0;
+    left: 29%;
+    background-color: #eb010f;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    z-index: -1;
+}
+.btn-red::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    -webkit-transform: skew(50deg);
+    transform: skew(50deg);
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    width: 0;
+}
+.btn-red:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.btn-red:hover::after {
+    height: 100%;
+    width: 135%;
 }
 .btn-white{
     position: relative;
     z-index: 0;
     background: #fff;
-    padding: 10px 30px;
-    font-size: 13px;
+    padding: 0px 30px;
+    font-size: 14px;
     font-weight: 700;
+    height: 50px;
+    line-height: 50px;
     border-radius: 5px;
-    border: 1px solid rgb(235, 1, 15);
+    border: 1px solid rgb(255, 45, 57);
     overflow: hidden;
     color: rgb(235, 1, 15);
+    transition: .3s;
+}
+.btn-white:hover{
+    color: #fff;
+    background: rgb(255, 45, 57);
+}
+.btn-white::after{
+    background: #ff2d39;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.btn-white::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    -webkit-transform: skew(50deg);
+    transform: skew(50deg);
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    width: 0;
+}
+.btn-white:hover::after {
+    height: 100%;
+    width: 135%;
 }
 .header-wraper {
     position: relative;
@@ -1259,6 +1347,58 @@ span.call-txt {
 /*---------contact us---------*/
 .contact-box-ab{
     margin-top: -100px;
+}
+/*------*/
+/*---------------------------------------14-07-2020---------------------------------------*/
+.bg-blue-l{
+    background-color: #f0f2f7;
+}
+.internal-head{
+    font-size: 40px;
+    font-weight: 700;
+}
+.dic--m-tag{
+    margin: 30px 0px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.how-hel-div {
+    float: right;
+    max-width: 570px;
+    padding: 80px 0px;
+}
+.hub-know {
+    background: #eef2f4;
+}
+.how-hel-div p{
+    margin: 30px 0;
+}
+.help--y img{
+    max-height: 440px;
+    object-fit: cover;
+    width: 100%;
+}
+.brand-categ {
+    position: absolute;
+    font-size: 12px;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+}
+.brand-categ ul li {
+    background: #fff;
+    border-radius: 20px;
+    color: #33475b;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    list-style: none;
+    margin-left: 0;
+    float: left;
+    margin-bottom: 8px;
 }
 
 
