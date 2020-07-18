@@ -2154,6 +2154,203 @@ ul.above--list12 li {
     padding: 20px;
     border-bottom: 1px solid #e9ecef;
 }
+.post--ll b{
+    font-size: 16px;
+    vertical-align: super;
+}
+.colm-divi-ass {
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+.title-22{
+    font-size: 22px;
+}
+.assem-list{
+    margin-top: 30px;
+    padding-left: 15px;
+}
+.assem-list li {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 10px;
+    list-style: square;
+}
+.box-pr-colum {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px 15px;
+}
+.most-off {
+    border: 1px solid #eb010f;
+    border-radius: 30px;
+    padding: 2px 15px;
+    color: #eb010f;
+    display: inline-block;
+    font-size: 13px;
+    transform: translateY(-35px);
+    background-color: #fff;
+}
+.ab-n-btn {
+    padding: 30px 0px;
+}
+.hr-solution {
+    padding-left: 15px;
+    margin-top: 50px;
+}
+.listh-type {
+    list-style: square;
+    margin-bottom: 30px;
+}
+.offer-bg{
+    background-color: #e9ecef;   
+}
+.right-side--offer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+}
+.start-wigits--mm {
+    text-align: center;
+}
+.main-loginwarpper {
+    background: url(../images/login-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.login--main {
+    background-color: #fff;
+    padding: 30px;
+    margin: 50px 0px;
+}
+.login--main h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.login--main p {
+    color: #848484;
+    margin-bottom: 50px;
+}
+.login-control {
+    height: 45px;
+}
+.keep-loged label {
+    font-size: 16px;
+    color: #848484;
+}
+.keep-loged label .checkmark{
+    height: 20px;
+    width: 20px;
+    top: 3px;
+}
+.forgot-pass {
+    text-align: right;
+}
+.login-btn button {
+    width: 100%;
+}
+.continue--ac {
+    text-align: center;
+}
+.continue--ac {
+    position: relative;
+}
+.continue--ac::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    background-color: #dee2e6;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+.continue--ac span {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    background: #fff;
+    padding: 0px 20px;
+}
+.continue--ac {
+    position: relative;
+    margin: 30px 0px;
+}
+.socila--login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.socila--login .sc-lo-btn{
+    display: inline-block;
+}
+.socila--login .sc-lo-btn .soc-comn-btn{
+    display: inline-block;
+}
+.socila--login .sc-lo-btn .soc-comn-btn {
+    color: #fff;
+    border-radius: 30px;
+    width: 150px;
+}
+.socila--login .sc-lo-btn .soc-comn-btn .fa {
+    color: #fff;
+    text-indent: -40px;
+}
+.socila--login .sc-lo-btn .btn-facebook{
+    background-color: #3b5998;
+}
+.socila--login .sc-lo-btn .btn-google{
+    background-color: #db4a39;
+}
+.socila--login .sc-lo-btn .btn-linkedin{
+    background-color: #0e76a8;
+}
+.card-row-sn {
+    height: calc(100% - 0px);
+}
+.sin-two-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.job-sign-top {
+    text-align: center;
+}
+.icon-two-s span {
+    width: 90px;
+    height: 90px;
+    display: block;
+    line-height: 90px;
+    font-size: 36px;
+    background-color: #eef2f4;
+    border-radius: 50%;
+    color: #33475b;
+    text-align: center;
+    margin: 20px auto;
+}
+.job-sign-top h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.job-sign-top p {
+    max-width: 300px;
+    margin: auto;
+}
+.sig-btn-s {
+    text-align: center;
+    margin: 30px 0px;
+}
+ 
 
 
 
