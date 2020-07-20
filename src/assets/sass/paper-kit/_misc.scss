@@ -66,10 +66,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     @include transition($slow-transition-time, linear);
 }
 
-.fa{
-    width: 18px;
-    text-align: center;
-}
 .margin-top{
     margin-top: 50px;
 }

@@ -1464,7 +1464,7 @@ span.call-txt {
 }
 /*----------account setting----------*/
 .card-header{
-    background-color: #eb010f;
+    background-color: #eb010f !important;
     color: #fff;
 }
 .account-wraper {
@@ -2350,6 +2350,36 @@ ul.above--list12 li {
     text-align: center;
     margin: 30px 0px;
 }
+.jobseek-info {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #7c7c7c;
+    margin-bottom: 0px;
+}
+.employee-pill {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 2px solid #eb010f;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.employee-pill li a {
+    color: #33475b;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    margin: 0px 10px;
+    border-radius: 3px;
+
+}
+.employee-pill li a.active{
+    background-color: #33475b;
+    color: #fff;
+}
+
+
+
+
  
 
 
