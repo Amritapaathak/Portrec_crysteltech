@@ -10,3 +10,9 @@
     padding: 30px;
     z-index: 1;
 }
+.bg-tran-p{
+    background-color: transparent;
+    border: 0px;
+    padding: 0.5rem 18px;
+    text-transform: uppercase;
+}
