@@ -1,416 +1,309 @@
-<div class="wrapper">
-    <section class="jobcontent-full mt-5">
-        <div class="jobseek-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-header text-center">
-                            <h3 class="title-head">Are you a Jobseeker?</h3>
-                            <p>Search and find your ideal job today</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="job-search-wrapper">
-                            <form (ngSubmit)="searchJob(forms)">
-                                <div class="job-search-form">
-                                    <div class="job-search-field dropdown">
-                                        <label for="filter-location" class="field-title">Where?</label>
-                                        <i class="fa fa-map-marker"></i>
-                                        <!-- <button type="button" class="dropdown-toggle" data-toggle="dropdown"
-                                            role="button" title="Filter by Location" id="dropdownMenuButton"
-                                            aria-expanded="false">
-                                            <span class="filter-option pull-left search-country-fld"> <b>Select</b>
-                                                Country </span>&nbsp;<span class="bs-caret"><span
-                                                    class="caret-t"></span></span>
-                                        </button> -->
-                                        <select name="country" [(ngModel)]="forms.country">
-                                            <option selected>Select Country</option>
-                                            <option value="all"><a class="country-list-item">
-                                                    <span class="text">All Countries</span>
-                                                </a></option>
-                                            <option value="Australia"><a tabindex="0" class="country-list-item">
-                                                    <span class="text">Australia</span>
-                                                </a></option>
-                                            <option value="america"><a tabindex="1" class="country-list-item">
-                                                    <span class="text">America</span>
-                                                </a></option>
 
-                                        </select>
-                                    </div>
-                                    <div class="job-search-field">
-                                        <label for="job-title" class="field-title">Which role?</label>
-                                        <i class="fa fa-keyboard-o"></i>
-                                        <input id="job-title-mob" name="keyword" [(ngModel)]="forms.keyword" type="text"
-                                            placeholder="Job Title or Keywords" value="" />
-                                    </div>
-                                    <div class="intro-search-button">
-                                        <button class="btn src-btn-job" style="background-color: red;color: #fff;">
-                                            <span>Search</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-jobfrm">
-            <div class="container">
-                <div class="full-grid-listjob my-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="left-side-filter">
-                                <div class="sidebar-item job-search-filter">
-                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapseExample"
-                                        aria-expanded="false" aria-controls="collapseExample">Jobs by Location</h4>
-                                    <div id="collapseExample" class="collapse">
-                                        <ul>
-                                            <li>
-                                                <a href="">Tokyo<span>708</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Dublin<span>261</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Cork<span>164</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Singapore<span>164</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Hong Kong<span>130</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">London<span>86</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">New South Wales<span>65</span></a>
-                                            </li>
-                                        </ul>
-                                        <!--<div class="show-more">Show more</div>
-									                    <div class="show-less">Show less</div>-->
-                                    </div>
-                                </div>
-                                <div class="sidebar-item job-search-filter">
-                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                                        aria-expanded="false" aria-controls="collapse2">Jobs by Category</h4>
-                                    <div id="collapse2" class="collapse">
-                                        <ul>
-                                            <li>
-                                                <a href="">IT<span>461</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Finance &amp; Accounting<span>338</span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-item job-search-filter">
-                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapse3"
-                                        aria-expanded="false" aria-controls="collapse3">Jobs by Type</h4>
-                                    <div id="collapse3" class="collapse">
-                                        <ul>
-                                            <li>
-                                                <a href="">Permanent<span>1581</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Contract<span>269</span></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="">Temporary<span>19</span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-item job-search-filter">
-                                    <h4 class="collapsed" data-toggle="collapse" data-target="#collapse4"
-                                        aria-expanded="false" aria-controls="collapse3">Jobs by Industry</h4>
-                                    <div id="collapse4" class="collapse">
-                                        <ul>
-                                            <li>
-                                                <a href="">Investment Banking<span>183</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="">Technology<span>160</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="">Financial Services<span>154</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="">Professional Services<span>152</span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-Job">
-                                <h6>Couldn't find the right Job?</h6>
-                                <a class="btn btn-cv" data-toggle="modal" data-target="#exampleModalCenter">Send us your
-                                    CV</a>
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header border-0">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Send us your CV</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="senn-box-cv">
-                                                    <div class="content--part-cv">
-                                                        <form action="">
-                                                            <div class="form-group form-row">
-                                                                <div class="col-md-6">
-                                                                    <div class="field--input">
-                                                                        <input type="text"
-                                                                            class="form-control controler-fill"
-                                                                            placeholder="First Name" name="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="field--input">
-                                                                        <input type="text"
-                                                                            class="form-control controler-fill"
-                                                                            placeholder="Last Name" name="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group form-row">
-                                                                <div class="col-md-6">
-                                                                    <div class="field--input">
-                                                                        <input type="email"
-                                                                            class="form-control controler-fill"
-                                                                            placeholder="Email Address" name="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="field--input">
-                                                                        <input type="email"
-                                                                            class="form-control controler-fill"
-                                                                            placeholder="Conform Email Address" name="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group form-row">
-                                                                <div class="col-md-6">
-                                                                    <div class="field--input">
-                                                                        <select class="form-control controler-fill">
-                                                                            <option>Select a Location</option>
-                                                                            <option>Australia</option>
-                                                                            <option>Canada</option>
-                                                                            <option>China</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="field--input">
-                                                                        <select class="form-control controler-fill">
-                                                                            <option>Select a Job Category</option>
-                                                                            <option value="technical">Technical</option>
-                                                                            <option value="nontechnical">Non-technical
-                                                                            </option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-row form-group">
-                                                                <div class="col-md-12 upload-cv-wrap">
-                                                                    <div class="upload-cv upload-field">
-                                                                        <fieldset class="js-form-item">
-                                                                            <label class="sr-only cv-upload--fill">
-                                                                                <span>Upload CV <i
-                                                                                        class="float-right fa fa-arrow-circle-o-up"
-                                                                                        aria-hidden="true"></i></span>
-                                                                                <input class="cv-upload" type="file"
-                                                                                    name="" />
-                                                                            </label>
-                                                                        </fieldset>
-                                                                        <div class="upload-cv-text">
-                                                                            <p>Files must be less than <span>2 MB</span>
-                                                                            </p>
-                                                                            <p>Allowed file types: <span>pdf, docx, doc,
-                                                                                    txt</span></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="form-row form-group fill-txt_size">
-                                                                <div class="col-12">
-                                                                    <div class="check-box-fill d-flex">
-                                                                        <label class="check--label">
-                                                                            <input type="checkbox" checked="checked">
-                                                                            <span class="checkmark"></span>
-                                                                        </label>
-                                                                        <p>I consent to Portrec processing my
-                                                                            personal information in accordance with the
-                                                                            Portrec <a href="#" target="_blank">Privacy
-                                                                                Statement</a>
-                                                                        </p>
-                                                                    </div>
-                                                                    <p>In order to provide you with the best possible
-                                                                        service, we need to process certain personal
-                                                                        information about you. We will only ask for and
-                                                                        use information that we genuinely need to
-                                                                        provide you with the best possible service.</p>
-                                                                    <p>We seek your consent to store your data and
-                                                                        provide you with services. Our privacy statement
-                                                                        clearly outlines the ways in which we process
-                                                                        your personal data. It describes how we collect,
-                                                                        use, share and process your personal data and
-                                                                        how we comply with our legal obligations to you.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-row form-group fill-txt_size">
-                                                                <div class="col-12">
-                                                                    <div class="submitresum text-center">
-                                                                        <button type="submit" class="btn">SEND
-                                                                            NOW</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="all-job-wraper">
-                                <div class="all-d-txt d-flex justify-content-between align-items-center">
-                                    <h3>All Jobs</h3>
-                                    <span class="job-search-count">Displaying 1 - <span>10</span> of 1869</span>
-                                </div>
-                                <div class="allpages-list">
-                                    <div class="job-search-item">
-                                        <a href="#">
-                                            <h5>Indirect Tax (VAT) Accountant</h5>
-                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
-                                                Tax professional to their International Indirect Tax Accounting team.
-                                            </p>
-                                            <div class="job-list-summary">
-                                                <ul>
-                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
-                                                            aria-hidden="true"></i>Cork City</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
-                                                            aria-hidden="true"></i>Contract</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
-                                                            aria-hidden="true"></i>Jul 03, 2020</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
-                                                            aria-hidden="true"></i>€50k - €70k</li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="job-search-item">
-                                        <a href="#">
-                                            <h5>Indirect Tax (VAT) Accountant</h5>
-                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
-                                                Tax professional to their International Indirect Tax Accounting team.
-                                            </p>
-                                            <div class="job-list-summary">
-                                                <ul>
-                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
-                                                            aria-hidden="true"></i>Cork City</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
-                                                            aria-hidden="true"></i>Contract</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
-                                                            aria-hidden="true"></i>Jul 03, 2020</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
-                                                            aria-hidden="true"></i>€50k - €70k</li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="job-search-item">
-                                        <a href="#">
-                                            <h5>Indirect Tax (VAT) Accountant</h5>
-                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
-                                                Tax professional to their International Indirect Tax Accounting team.
-                                            </p>
-                                            <div class="job-list-summary">
-                                                <ul>
-                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
-                                                            aria-hidden="true"></i>Cork City</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
-                                                            aria-hidden="true"></i>Contract</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
-                                                            aria-hidden="true"></i>Jul 03, 2020</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
-                                                            aria-hidden="true"></i>€50k - €70k</li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="job-search-item">
-                                        <a href="#">
-                                            <h5>Indirect Tax (VAT) Accountant</h5>
-                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
-                                                Tax professional to their International Indirect Tax Accounting team.
-                                            </p>
-                                            <div class="job-list-summary">
-                                                <ul>
-                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
-                                                            aria-hidden="true"></i>Cork City</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
-                                                            aria-hidden="true"></i>Contract</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
-                                                            aria-hidden="true"></i>Jul 03, 2020</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
-                                                            aria-hidden="true"></i>€50k - €70k</li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="job-search-item">
-                                        <a href="#">
-                                            <h5>Indirect Tax (VAT) Accountant</h5>
-                                            <p>A leading multinational in Cork has engaged Portrec to recruit a
-                                                Tax professional to their International Indirect Tax Accounting team.
-                                            </p>
-                                            <div class="job-list-summary">
-                                                <ul>
-                                                    <li class="jobpoint-tt"> <i class="fa fa-map-marker"
-                                                            aria-hidden="true"></i>Cork City</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-briefcase"
-                                                            aria-hidden="true"></i>Contract</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-calendar"
-                                                            aria-hidden="true"></i>Jul 03, 2020</li>
-                                                    <li class="jobpoint-tt"><i class="fa fa-credit-card"
-                                                            aria-hidden="true"></i>€50k - €70k</li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="load-more text-center">
-                                        <a href="#" class="btn more-job-lnk"><span>Load more Jobs</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+	<div class="wrapper">
+		<section class="py-5" style="background: #f8f9fa;">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="card">
+							<div class="card-header">Filter Results</div>
+							<div class="left-side-filter">
+								<span class="kew-src-box"><input type="text" placeholder="Keywords Search"></span>
+								<span class="src-btnfilter"><button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+							</div>
+							<div class="filte-bottm-below">
+								<ul class="list--btm-area">
+									<li class="asi-fl-tt">
+										<span class="colapse-tap">
+										  <a class="" data-toggle="collapse" href="#filter1" role="button" aria-expanded="false" aria-controls="filter1">Job Function <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+										</span>
+										<div class="collapse filr0-col"  id="filter1">
+											<a class="com0-filter-bx" href="#">
+												<div class="fil-rr-1">
+											  		<label class="radio-btn">
+												  		<input type="radio" checked="checked" name="radio">
+													  	<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="fil-rr-2">
+													<span>Accounting, Auditing & Finance</span>
+												</div>
+												<div class="fil-rr-3">
+													<span>1</span>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="asi-fl-tt">
+										<span class="colapse-tap">
+										  <a class="" data-toggle="collapse" href="#filter2" role="button" aria-expanded="false" aria-controls="filter2">Industry<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+										</span>
+										<div class="collapse filr0-col"  id="filter2">
+											<a class="com0-filter-bx" href="#">
+												<div class="fil-rr-1">
+											  		<label class="radio-btn">
+												  		<input type="radio" checked="checked" name="radio">
+													  	<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="fil-rr-2">
+													<span>Automotive & Aviation</span>
+												</div>
+												<div class="fil-rr-3">
+													<span>1</span>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="asi-fl-tt">
+										<span class="colapse-tap">
+										  <a class="" data-toggle="collapse" href="#filter3" role="button" aria-expanded="false" aria-controls="filter3">Location<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+										</span>
+										<div class="collapse filr0-col"  id="filter3">
+											<a class="com0-filter-bx" href="#">
+												<div class="fil-rr-1">
+											  		<label class="radio-btn">
+												  		<input type="radio" checked="checked" name="radio">
+													  	<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="fil-rr-2">
+													<span>Abuja</span>
+												</div>
+												<div class="fil-rr-3">
+													<span>1</span>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="asi-fl-tt">
+										<span class="colapse-tap">
+										  <a class="" data-toggle="collapse" href="#filter4" role="button" aria-expanded="false" aria-controls="filter4">Work Type<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+										</span>
+										<div class="collapse filr0-col"  id="filter4">
+											<a class="com0-filter-bx" href="#">
+												<div class="fil-rr-1">
+											  		<label class="radio-btn">
+												  		<input type="radio" checked="checked" name="radio">
+													  	<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="fil-rr-2">
+													<span>Full Time</span>
+												</div>
+												<div class="fil-rr-3">
+													<span>1</span>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="asi-fl-tt">
+										<span class="colapse-tap">
+										  <a class="" data-toggle="collapse" href="#filter5" role="button" aria-expanded="false" aria-controls="filter5">Order By<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+										</span>
+										<div class="collapse filr0-col"  id="filter5">
+											<a class="com0-filter-bx" href="#">
+												<div class="fil-rr-1">
+											  		<label class="radio-btn">
+												  		<input type="radio" checked="checked" name="radio">
+													  	<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="fil-rr-2">
+													<span>Default</span>
+												</div>
+											</a>
+											<a class="com0-filter-bx" href="#">
+												<div class="fil-rr-1">
+											  		<label class="radio-btn">
+												  		<input type="radio" checked="checked" name="radio">
+													  	<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="fil-rr-2">
+													<span>Latest</span>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="end-of-filter">
+									<button type="button" class="btn btn-red btn-height">Reset Filter</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="">
+							<div class="card card--compact">
+								<div class="card-header">Accounting, Auditing & Finance Automotive & Aviation Jobs in Abuja</div>
+								<div class="card-body">
+									<div class="act-audit-row">
+										<div class="comn-audit audit-1">
+											<span>1 Job Found</span>
+										</div>
+										<div class="comn-audit audit-2">
+											<a href="#" class="btn-audit btn btn-red">Create Job Alert</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-body card--compact">
+								<div class="row-avtive-not">
+									<div class="notifi-1 notifi-bell">
+										<span class="bell-fa-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+									</div>
+									<div class="notifi-2 txt-noti-m">
+										<h4>Activate Notifications</h4>
+										<p>Stay productive - get the latest updates on Jobs & News</p>
+									</div>
+									<div class="notifi-3 ac-not-ac">
+										<button class="btn btn-red btn-height">ACTIVATE</button>
+									</div>
+								</div>
+							</div>
+							<div class="card card--compact">
+								<div class="wrap-full-wig">
+									<div class="sub-whole-wrap">
+										<div class="searc-top-head"><div class="src-job-head"><h4 class="src-title-job"><a href="#">Debt Collector</a></h4></div><div class="new-tag"><span>NEW</span></div></div>
+										<div class="team-arc"><span><a class="tm-ac" href="#">Team Ace</a></span></div>
+										<div class="list--job-spec">
+											<ul class="spec--wig">
+												<li class="jobs-it">Abuja</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">Full Time</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">NGN Less than 75,000</li>
+											</ul>
+										</div>
+										<div class="funct-flex">
+											<div class="left-wrap0"><span>Job Function:</span><span>Accounting, Auditing & Finance</span></div>
+											<div class="right-wrap0"><span>3d</span></div>
+										</div>
+									</div>
+									<div class="sub-new-bottom">
+										<div class="icon-box-src"><span class="icon--tem"><i class="fa fa-briefcase" aria-hidden="true"></i></span></div>
+										<div class="disc--job0ac"><p>Team Ace is a human resource and consulting company that focus on human resource management, payroll and accounting solutions.</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="job-type"><h3 class="title-32">Similar Jobs</h3></div>
+							<div class="card card--compact">
+								<div class="wrap-full-wig">
+									<div class="sub-whole-wrap">
+										<div class="searc-top-head"><div class="src-job-head"><h4 class="src-title-job"><a href="#">Computer Operator</a></h4></div><div class="new-tag"><span>NEW</span></div></div>
+										<div class="team-arc"><span><a class="tm-ac" href="#">Ugom Communication</a></span></div>
+										<div class="list--job-spec">
+											<ul class="spec--wig">
+												<li class="jobs-it">Abuja</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">Full Time</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">NGN Confidential</li>
+											</ul>
+										</div>
+										<div class="funct-flex">
+											<div class="left-wrap0"><span>Job Function:</span><span>Accounting, Auditing & Finance</span></div>
+											<div class="right-wrap0"><span>3d</span></div>
+										</div>
+									</div>
+									<div class="sub-new-bottom">
+										<div class="icon-box-src"><span class="icon--tem"><i class="fa fa-briefcase" aria-hidden="true"></i></span></div>
+										<div class="disc--job0ac"><p>We are currently recruiting for this position</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="card card--compact">
+								<div class="wrap-full-wig">
+									<div class="sub-whole-wrap">
+										<div class="searc-top-head"><div class="src-job-head"><h4 class="src-title-job"><a href="#">Internal Auditor</a></h4></div><div class="new-tag"><span>NEW</span></div></div>
+										<div class="team-arc"><span><a class="tm-ac" href="#">Heartland Alliance Ltd/Gte</a></span></div>
+										<div class="list--job-spec">
+											<ul class="spec--wig">
+												<li class="jobs-it">Abuja</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">Full Time</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">NGN 600,000 - 900,000</li>
+											</ul>
+										</div>
+										<div class="funct-flex">
+											<div class="left-wrap0"><span>Job Function:</span><span>Accounting, Auditing & Finance</span></div>
+											<div class="right-wrap0"><span>6d</span></div>
+										</div>
+									</div>
+									<div class="sub-new-bottom">
+										<div class="icon-box-src"><span class="icon--tem"><i class="fa fa-briefcase" aria-hidden="true"></i></span></div>
+										<div class="disc--job0ac"><p>The internal auditor will ensure checks and balance, compliance to policies and donor agreements.</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-body card--compact">
+								<div class="row-avtive-not">
+									<div class="notifi-1 notifi-bell">
+										<span class="bell-fa-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+									</div>
+									<div class="notifi-2 txt-noti-m">
+										<h4>Activate Notifications</h4>
+										<p>Stay productive - get the latest updates on Jobs & News</p>
+									</div>
+									<div class="notifi-3 ac-not-ac">
+										<button class="btn btn-red btn-height">ACTIVATE</button>
+									</div>
+								</div>
+							</div>
+							<div class="card card--compact">
+								<div class="wrap-full-wig">
+									<div class="sub-whole-wrap">
+										<div class="searc-top-head"><div class="src-job-head"><h4 class="src-title-job"><a href="#">Finance and Operations Manager</a></h4></div><div class="new-tag"><span>NEW</span></div></div>
+										<div class="team-arc"><span><a class="tm-ac" href="#">Box Office Hub</a></span></div>
+										<div class="list--job-spec">
+											<ul class="spec--wig">
+												<li class="jobs-it">Abuja</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">Full Time</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">NGN 75,000 - 150,000</li>
+											</ul>
+										</div>
+										<div class="funct-flex">
+											<div class="left-wrap0"><span>Job Function:</span><span>Accounting, Auditing & Finance</span></div>
+											<div class="right-wrap0"><span>1w</span></div>
+										</div>
+									</div>
+									<div class="sub-new-bottom">
+										<div class="icon-box-src"><span class="icon--tem"><i class="fa fa-briefcase" aria-hidden="true"></i></span></div>
+										<div class="disc--job0ac"><p>Ensure the optimum mgt. of finances and other resources of BOH (human and material). To support value creation through mgt. of operational activities.</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="card card--compact">
+								<div class="wrap-full-wig">
+									<div class="sub-whole-wrap">
+										<div class="searc-top-head"><div class="src-job-head"><h4 class="src-title-job"><a href="#">Investment Banker & Private Equity Expert</a></h4></div><div class="new-tag"><span>NEW</span></div></div>
+										<div class="team-arc"><span><a class="tm-ac" href="#">Rekriut Human Resource Services</a></span></div>
+										<div class="list--job-spec">
+											<ul class="spec--wig">
+												<li class="jobs-it">Abuja</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">Full Time</li>
+												<li class="jobs-it job-header__divider">|</li>
+												<li class="jobs-it">NGN 75,000 - 150,000</li>
+											</ul>
+										</div>
+										<div class="funct-flex">
+											<div class="left-wrap0"><span>Job Function:</span><span>NGN 250,000 - 400,000</span></div>
+											<div class="right-wrap0"><span>2w</span></div>
+										</div>
+									</div>
+									<div class="sub-new-bottom">
+										<div class="icon-box-src"><span class="icon--tem"><i class="fa fa-briefcase" aria-hidden="true"></i></span></div>
+										<div class="disc--job0ac"><p>We are looking for a high-performance ex: investment banking, private equity, venture capital, to shape the firm’s diligence and investment processes.</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>

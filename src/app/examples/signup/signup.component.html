@@ -1,359 +1,41 @@
 
-<div class="wrapper">
-    <section class="hire-staff-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-header hiring-sec">
-                        <h1 class="title-head">Looking to hire new staff?</h1>
-                        <h3>Free Consultation - Talk to the Recruitment Experts</h3>
-                        <p>Our contingent recruitment services are based on a no appointment no fee basis meaning you
-                            only pay for our recruitment services if we find the right person and they are placed in
-                            your business.</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="Call-us">
-                        <div class="d-flex justify-content-center align-items-center whole-number-fillup">
-                            <span class="call-txt">Call us:</span>
-                            <span class="dropdown flag-dropdn">
-                                <button class=" dropdown-toggle" type="button" id="contactnum" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" style="border-color: transparent;"><img
-                                        src="../../../assets/icon/flag-icon-1.jpg"></button>
-                                <ul class="dropdown-menu contactnum">
-                                    <li class="dropdown-item item-linkcont"><img
-                                            src="../../../assets/icon/flag-icon-1.jpg"> Australia</li>
-                                    <li class="dropdown-item item-linkcont"><img
-                                            src="../../../assets/icon/flag-icon-1.jpg">Singapore</li>
-                                    <li class="dropdown-item item-linkcont"><img
-                                            src="../../../assets/icon/flag-icon-1.jpg">United KingDom</li>
-                                </ul>
-                            </span>
-                            <span class="change-number"><a href="#" class="num-tt">+351 1 5225 444</a></span>
-                        </div>
-                        <div class="hours-txt text-center">
-                            <p>Opening hours: 09:00am - 17:30pm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="detail-section-wid">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="detail-title">
-                        <h2>Your Details</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 offset-md-3">
-                    <div class="senn-box-cv">
-                        <div class="content--part-cv">
-                            <form class="register-form" (ngSubmit)="postJob(forms)">
-                                <div class="form-group form-row">
-                                    <div class="col-12">
-                                        <div class="field--input">
-                                            <button type="button" class="btn-text-link">Sign in with
-                                                <strong>LinkedIn</strong></button>
-                                            <br>
-                                            <span>AutoFill your information</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-12">
-                                        <div class="field--input">
-                                            <select class="form-control controler-fill" name="type" [(ngModel)]="forms.type" required>
-                                                <option>What are you looking for?</option>
-                                                <option>Looking to hire new people</option>
-                                                <option>Looking for job opportunity</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-md-6">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="First Name"
-                                                name="firstName" [(ngModel)]="forms.firstName" required minlength="3"
-                                                maxlength="30" #firstName="ngModel">
-                                        </div>
-
-                                        <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="firstName.errors.required">
-                                                First Name is required.
-                                            </div>
-                                            <div *ngIf="firstName.errors.minlength">
-                                                First Name cannot be more than 30 characters long.
-                                            </div>
-                                            <div *ngIf="firstName.errors.minlength">
-                                                First Name must be at least 2 characters long.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Last Name"
-                                                name="lastName" [(ngModel)]="forms.lastName" required minlength="3"
-                                                maxlength="30" #lastName="ngModel">
-                                        </div>
-
-                                        <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="lastName.errors.required">
-                                                Last Name is required.
-                                            </div>
-                                            <div *ngIf="lastName.errors.minlength">
-                                                Last Name cannot be more than 30 characters long.
-                                            </div>
-                                            <div *ngIf="lastName.errors.minlength">
-                                                Last Name must be at least 2 characters long.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-md-12">
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Email" name="email"
-                                                [(ngModel)]="forms.email" required #email="ngModel">
-                                        </div>
-                                        <div *ngIf="email.invalid && (email.dirty || email.touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="email.errors.required">
-                                                Email address is required.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-12">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Phone" name="phone"
-                                                [(ngModel)]="forms.phone" required #phone="ngModel">
-                                        </div>
-                                        <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="phone.errors.required">
-                                                Contact Nember is required.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-12">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control controler-fill"
-                                                placeholder="Company Name" name="companyName" [(ngModel)]="forms.companyName"
-                                                required #companyName="ngModel">
-                                        </div>
-                                        <div *ngIf="companyName.invalid && (companyName.dirty || companyName.touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="companyName.errors.required">
-                                                Company Name is required.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-md-6">
-                                        <div class="input-group">
-                                            <select class="form-control controler-fill" name="companyType" [(ngModel)]="forms.companyType"
-                                            required>
-                                                <option>Industry</option>
-                                                <option>IT</option>
-                                                <option>Legal</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-group">
-                                            <select class="form-control controler-fill" name="numOfEmp" [(ngModel)]="forms.numOfEmp"
-                                            required>
-                                                <option>No. of Employees</option>
-                                                <option>1-249 Employees</option>
-                                                <option>249-400 Employees</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-row">
-                                    <div class="col-12">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control controler-fill"
-                                                placeholder="Position you are hiring for" name="jobType" [(ngModel)]="forms.jobType" required #jobType="ngModel">
-                                        </div>
-                                        <div *ngIf="companyName.invalid && (companyName.dirty || companyName.touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="companyName.errors.required">
-                                                Company Name is required.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row form-group fill-txt_size">
-                                    <div class="col-12">
-                                        <div class="check-box-fill d-flex">
-                                            <label class="check--label">
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <p>I consent to Morgan McKinley processing my personal information in
-                                                accordance with the Morgan McKinley <a href="#" target="_blank">Privacy
-                                                    Statement</a> </p>
-                                        </div>
-                                        <p>Do you want to hear about the latest recruitment insights, salary guides and
-                                            professional networking events that are relevant to you?</p>
-                                    </div>
-                                </div>
-                                <div class="form-row form-group radio-fillup">
-                                    <div class="col-12">
-                                        <span>
-                                            <label class="radio-btn">No
-                                                <input type="radio" checked="checked" name="radio">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </span>
-                                        <span>
-                                            <label class="radio-btn">Yes
-                                                <input type="radio" checked="checked" name="radio">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="form-row fill-txt_size">
-                                    <div class="col-12">
-                                        <div class="submitdetail text-center">
-                                            <button type="submit" class="btn">SUBMIT</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="privc-state text-center"><a href="#" target="_blank">Privacy Statement</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="find-y-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-find">
-                        <h3>Find your local office</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-3">
-                    <div class="local-colum">
-                        <div class="local-img"><img src="../../../assets/images/contact-img-1.png"></div>
-                        <div class="address-bottom-n">
-                            <h4 class="heading--local">Australia</h4>
-                            <p class="address--local">
-                                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span>Level 9, 383 Kent
-                                    Street, Sydney, NSW 2000</span></p>
-                            <p class="address--local"><span><i class="fa fa-phone"
-                                        aria-hidden="true"></i></span><span><a href="tel:61 2 8986 3100">+61 2 8986
-                                        3100</a></span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="local-colum">
-                        <div class="local-img"><img src="../../../assets/images/contact-img-2.png"></div>
-                        <div class="address-bottom-n">
-                            <h4 class="heading--local">Canada</h4>
-                            <p class="address--local"><span><i class="fa fa-map-marker"
-                                        aria-hidden="true"></i></span><span>425 Adelaide St. West, Suite 201, Toronto
-                                    M5V 3C1, Canada</span></p>
-                            <p class="address--local"><span><i class="fa fa-phone"
-                                        aria-hidden="true"></i></span><span><a href="tel:16474790155">+1 (647) 4790
-                                        155</a></span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="local-colum">
-                        <div class="local-img"><img src="../../../assets/images/contact-img-3.png"></div>
-                        <div class="address-bottom-n">
-                            <h4 class="heading--local">Hong Kong</h4>
-                            <p class="address--local"><span><i class="fa fa-map-marker"
-                                        aria-hidden="true"></i></span>Suite 3407, Lippo Centre, Tower II, 89 Queensway,
-                                Admiralty, Hong Kong<span></span></p>
-                            <p class="address--local"><span><i class="fa fa-phone"
-                                        aria-hidden="true"></i></span><span><a href="tel:85239073907">+852 3907
-                                        3907</a></span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="local-colum">
-                        <div class="local-img"><img src="../../../assets/images/contact-img-4.png"></div>
-                        <div class="address-bottom-n">
-                            <h4 class="heading--local">Ireland - Dublin</h4>
-                            <p class="address--local"><span><i class="fa fa-map-marker"
-                                        aria-hidden="true"></i></span><span>Connaught House, Number One Burlington Rd,
-                                    Dublin 4, D04 C5Y6</span></p>
-                            <p class="address--local"><span><i class="fa fa-phone"
-                                        aria-hidden="true"></i></span><span><a href="tel:35314485660">+353 1
-                                        4485660</a></span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="local-colum">
-                        <div class="local-img"><img src="../../../assets/images/contact-img-5.png"></div>
-                        <div class="address-bottom-n">
-                            <h4 class="heading--local">UK - London</h4>
-                            <p class="address--local"><span><i class="fa fa-map-marker"
-                                        aria-hidden="true"></i></span><span>61 Aldwych, London WC2B 4AE</span></p>
-                            <p class="address--local"><span><i class="fa fa-phone"
-                                        aria-hidden="true"></i></span><span><a href="tel:442070920127">+44 20
-                                        70920127</a><a href="tel:442070920157">+44 20 70920157</a></span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <a class="btn global-btn" href="#" style="color: #eb010f;
-                        font-size: 14px;
-                        text-transform: uppercase;
-                        font-weight: 700;background-color: transparent;border-color: transparent;">See our full list of
-                            global offices <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-4 beyond-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="beyon-sec">
-                        <h3>TOGETHER WE WILL GO BEYOND</h3>
-                        <p>Whether you need to find top talent or your next perfect job opportunity, we can help.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="job-bd">
-                        <a class="btn" href="#/signup"> START HIRING</a>
-                        <a class="btn" href="#/job">FIND A JOB</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+	<div class="wrapper">
+		<section class="py-5" style="background: #f8f9fa;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-5">
+						<div class="card card-row-sn">
+							<div class="card-body sin-two-part">
+								<div class="job-sign-top">
+									<div class="icon-two-s">
+										<span><i class="fa fa-user" aria-hidden="true"></i></span>
+									</div>
+									<h3>Job Seeker</h3>
+									<p>Are you looking for your dream job? Create a unique career profile with Jobberman</p>
+								</div>
+								<div class="sig-btn-s">
+									<a href="#/jobseekersignup" class="btn btn-red btn-height">Job Seeker Sign Up</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="card card-row-sn">
+							<div class="card-body sin-two-part">
+								<div class="job-sign-top">
+									<div class="icon-two-s">
+										<span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+									</div>
+									<h3>Employer</h3>
+									<p>Are you looking for quality candidates? Advertise and search with Jobberman</p>
+								</div>
+								<div class="sig-btn-s">
+									<a href="#/employersignup" class="btn btn-red btn-height">Employer Sign Up</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
