@@ -122,7 +122,6 @@ h1, h2, h3, h4, h5, h6 {
 header{
     position: relative;
     z-index: 9;
-    margin: 10px 0px 40px;
 }
 /* .navbar-nav .dropdown:hover > .dropdown-menu {
   display: block;
@@ -299,7 +298,6 @@ header{
     box-sizing: border-box;
     margin: 0px auto;
     overflow: hidden;
-    margin-top: -40px;
 }
 .banner-all{
     position: absolute;
