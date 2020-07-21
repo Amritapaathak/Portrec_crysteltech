@@ -45,7 +45,6 @@ const routes: Routes =[
     { path: 'experties',        loadChildren: './examples/experties/experties.module#ExpertiesModule'},
     { path: 'pricing',          component: PricingComponent},
     { path: 'services',         loadChildren: './examples/services/services.module#ServicesModule'},
-    
     { path: 'why-us',           component: WhyusComponent},
     { path: 'our-story',        component: OurStoryComponent},
     { path: 'how-we-discover-your-talent', component: HowWeDiscoverYourTalentComponent},
