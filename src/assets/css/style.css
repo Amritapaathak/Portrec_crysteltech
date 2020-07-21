@@ -182,13 +182,13 @@ header{
 .btn-red{
     position: relative;
     z-index: 0;
-    background: rgb(235, 1, 15);
+    background: rgb(235, 1, 15) !important;
     padding: 0px 30px;
     font-size: 14px;
     height: 50px;
     font-weight: 700;
     border-radius: 5px;
-    border: 1px solid rgb(235, 1, 15);
+    border: 1px solid rgb(235, 1, 15) !important;
     overflow: hidden;
     color: #fff;
     transition: .3s;
@@ -248,16 +248,16 @@ header{
 .btn-white{
     position: relative;
     z-index: 0;
-    background: #fff;
+    background: #fff !important;
     padding: 0px 30px;
     font-size: 14px;
     font-weight: 700;
     height: 50px;
     line-height: 50px;
     border-radius: 5px;
-    border: 1px solid rgb(255, 45, 57);
+    border: 1px solid rgb(255, 45, 57) !important;
     overflow: hidden;
-    color: rgb(235, 1, 15);
+    color: rgb(235, 1, 15) !important;
     transition: .3s;
 }
 .btn-white:hover{
@@ -996,7 +996,7 @@ header{
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1820,7 +1820,7 @@ span.call-txt {
     padding: 5px 0px;
 }
 .src-title-job {
-    margin-bottom: 0px;
+    margin: 0px;
 }
 .src-title-job a{
     font-size: 19px;
@@ -2299,6 +2299,7 @@ ul.above--list12 li {
     color: #fff;
     border-radius: 30px;
     width: 150px;
+    border: 0;
 }
 .socila--login .sc-lo-btn .soc-comn-btn .fa {
     color: #fff;

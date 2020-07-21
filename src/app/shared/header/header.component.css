@@ -8,3 +8,6 @@
     font-weight: 600;
     color: #66615B;
 }
+.brand-logo img{
+	max-width: 150px;
+}
