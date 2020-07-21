@@ -299,6 +299,7 @@ header{
     box-sizing: border-box;
     margin: 0px auto;
     overflow: hidden;
+    margin-top: -40px;
 }
 .banner-all{
     position: absolute;
@@ -539,6 +540,7 @@ header{
 }
 .view-guid {
     text-align: center;
+    margin-top: 30px;
 }
 .view-guid a {
     color: #EB010F !important;
