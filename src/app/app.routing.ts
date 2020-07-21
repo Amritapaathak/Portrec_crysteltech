@@ -53,6 +53,8 @@ const routes: Routes =[
     { path: 'job-description-templates', component: JobDescriptionTemplatesComponent},
     { path: 'latest-insights-and-advice', loadChildren: './examples/latest-insights-and-advice/latest-insights-and-advice.module#LatestInsightsAndAdviceModule'},
     { path: 'salary-guides', component:SalaryGuidesComponent},
+    { path: 'jobseeker', loadChildren: './jobseekerprofile/jobseekerprofile.module#JobseekerprofileModule'},
+    { path: 'employer', loadChildren: './employeradmin/employeradmin.module#EmployeradminModule'},
 
 ];
 
