@@ -460,17 +460,18 @@ header{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;;
-    color: rgb(255, 255, 255);
-    background: rgb(235, 1, 15);
-    padding: 13.6px 30px;
+    color: rgb(255, 255, 255) !important;
+    background: rgb(235, 1, 15) !important;
+    padding: 13.6px 30px !important;
     border-radius: 5px;
     min-height: 50px;
     overflow: hidden;
+    border:0px !important;
 }
 .btn-salary:focus, .btn-salary:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     box-shadow: none;
-    background: rgb(255, 45, 57);
+    background: rgb(255, 45, 57) !important;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(255, 45, 57);
@@ -540,12 +541,13 @@ header{
     text-align: center;
 }
 .view-guid a {
-    color: #EB010F;
+    color: #EB010F !important;
     border: 1px solid #EB010F;
     padding: 12px 30px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
+    background: #fff !important;
 }
 /*-----------------------*/
 .beyond-section{
@@ -578,13 +580,14 @@ header{
 }
 
 .job-bd a{
-    background-color: #EB010F;
+    background-color: #EB010F !important;
     font-size: 13px;
     padding: 13px 18px;
     margin-left: 15px;  
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
+    border:0 !important;
 }
 
 /*-------------------- job-seeker  ----------------------*/
