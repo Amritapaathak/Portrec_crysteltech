@@ -1,0 +1,153 @@
+
+.card-profile {
+    background-color: #33475b;
+    margin-top: 48px;
+}
+.profile-fill-row {
+    text-align: center;
+    margin-top: -60px;
+    padding: 0px 30px 30px 30px;
+}
+.user-holder-icon {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: auto;
+}
+.user-holder-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-name {
+    color: #fff;
+    font-size: 24px;
+    margin: 15px 0px;
+}
+.sub-head-car{
+    color: #fff;
+    font-size: 14px;
+}
+.card-plus {
+    margin-top: 30px;
+}
+.compl-profile {
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #33475b;
+}
+.percent--point {
+    width: 120px;
+    float: left;
+    text-align: center;
+}   
+.perc-disc-h {
+    float: left;
+    max-width: 188px;
+    padding-left: 20px;
+}
+.circle--perc {
+    width: 120px;
+    height: 120px;
+    border: 6px solid #f6f6f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.title-perc-pro {
+    color: #fff;
+    font-size: 18px;
+}
+.about-list {
+    padding: 15px 15px;
+}
+.leftabt-wig .l-tag-w {
+    font-size: 16px;
+    padding: 8px 0px;
+}
+.leftabt-wig .l-tag-w a{
+    display: block;
+    color: #33475b;
+}
+.leftabt-wig .l-tag-w .circle-box-l {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #eb010f;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 8px;
+}
+.leftabt-wig .l-tag-w .file-perc {
+    float: right;
+}
+.card-unl-feature{
+    margin-top: 30px;
+}
+.unloc-noti li {
+    margin-bottom: 25px;
+}
+.unl-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.unl-col-1{
+    flex: 1;
+    margin-right:15px;
+}
+.unl-col-1 h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.unl-col-1 span {
+    font-weight: 400;
+    color: #838383;
+}
+.unl-col-2 span .fa {
+    font-size: 26px;
+}
+.find-out a {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.inform-warpper-row {
+    margin-top: 48px;
+}
+.card--compact {
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #0000003b;
+    margin-bottom: 30px;
+}
+.header-up-card{
+    padding: 30px 20px;
+}
+.card--compact h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.card--compact p {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 0px;
+}
+.upda-fill {
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    padding: 12px;
+}
+.upda-fill .upd-btn {
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
