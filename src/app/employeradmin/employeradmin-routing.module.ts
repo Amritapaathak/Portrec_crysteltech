@@ -11,7 +11,8 @@ import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
 import { ViewcreditbalanceComponent } from './viewcreditbalance/viewcreditbalance.component';
 
 const routes: Routes = [
-  {path:'', pathMatch: 'welcome'},
+  // {path:'', pathMatch: 'welcome'},
+  {path:'', redirectTo: 'welcome', pathMatch: 'full'}, 
   {path:'welcome',   component: WhatsnewComponent},
   {path:'dashboard', component: DashboardComponent},
   {path:'jobcreate', component: PostjobComponent},

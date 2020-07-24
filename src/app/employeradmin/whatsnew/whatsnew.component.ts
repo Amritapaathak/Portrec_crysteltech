@@ -10,6 +10,12 @@ export class WhatsnewComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    localStorage.setItem('utype','2');
+    var c = localStorage.getItem('loadpage');
+    if(c == '1'){
+      localStorage.setItem('loadpage','2');
+      window.location.reload();
+    }
   }
 
 }

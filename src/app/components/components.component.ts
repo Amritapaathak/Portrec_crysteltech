@@ -30,6 +30,7 @@ export class ComponentsComponent implements OnInit {
     }
 
     ngOnInit() {
+        localStorage.setItem('utype','0');
         let input_group_focus = document.getElementsByClassName('form-control');
         let input_group = document.getElementsByClassName('input-group');
         for (let i = 0; i < input_group.length; i++) {

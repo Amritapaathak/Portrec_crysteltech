@@ -6,6 +6,7 @@ import { CareerComponent } from './career/career.component';
 
 
 const routes: Routes = [
+  // {path:'', redirectTo: 'welcome', pathMatch: 'full'},
   {path:'',        component: ProfileComponent},
   {path:'account', component: AcountsettingComponent},
   {path:'career',  component: CareerComponent}

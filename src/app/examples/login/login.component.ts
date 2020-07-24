@@ -38,24 +38,30 @@ export class LoginComponent implements OnInit {
     
   }
 
-  Login(forms){
+  // Login(forms){
 
-    let user = {
-      email: this.forms.email,
-      password: this.forms.password,
-    }
-    const url = 'http://18.140.131.246:4300/api/user/login';
-    const headers1 = {'Content-Type':  'application/json',
-    Accept: '*/*',};
-    this.http.post(url, user, { headers: headers1 }).subscribe(
-      (data) => {
-        this.router.navigate(['/home']);
-        console.log(data);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+  //   let user = {
+  //     email: this.forms.email,
+  //     password: this.forms.password,
+  //   }
+  //   const url = 'http://18.140.131.246:4300/api/user/login';
+  //   const headers1 = {'Content-Type':  'application/json',
+  //   Accept: '*/*',};
+  //   this.http.post(url, user, { headers: headers1 }).subscribe(
+  //     (data) => {
+  //       this.router.navigate(['/home']);
+  //       console.log(data);
+  //     },
+  //     (error) => {
+  //       console.log(error);
+  //     }
+  //   );
     
+  // }
+
+  login(){
+    localStorage.setItem('utype','2');
+    localStorage.setItem('loadpage','1');
+    this.router.navigate(['employer']);
   }
 }

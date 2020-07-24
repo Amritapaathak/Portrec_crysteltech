@@ -26,6 +26,7 @@ import { CorporateSocialResponsibilityComponent } from './examples/corporate-soc
   import { from } from 'rxjs';
 import { JobDescriptionTemplatesComponent } from './examples/job-description-templates/job-description-templates.component';
 import { SalaryGuidesComponent } from './examples/salary-guides/salary-guides.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -54,6 +55,7 @@ const routes: Routes =[
     { path: 'salary-guides', component:SalaryGuidesComponent},
     { path: 'jobseeker', loadChildren: './jobseekerprofile/jobseekerprofile.module#JobseekerprofileModule'},
     { path: 'employer', loadChildren: './employeradmin/employeradmin.module#EmployeradminModule'},
+    { path: 'navbar', component: NavbarComponent},
 
 ];
 
